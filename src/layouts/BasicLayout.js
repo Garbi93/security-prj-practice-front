@@ -6,7 +6,6 @@ const BasicLayout = ({ children }) => {
     <>
       <header className="bg-teal-400 p-5">
         <BasicMenu />
-        {/*    test */}
       </header>
       <div
         className="bg-white my-5 w-full flex flex-col space-y-4 md:flex-row md:space-x-4
