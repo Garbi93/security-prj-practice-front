@@ -17,7 +17,7 @@ export const getOne = async (tno) => {
 export const getList = async (pageParam) => {
   const { page, size } = pageParam;
 
-  const res = await axios.get(`${prefix}/list`,{params:{page, size}});
+  const res = await axios.get(`${prefix}/list`, { params: { page, size } });
 
   return res.data;
 };
