@@ -30,6 +30,7 @@ function ReadComponent({ tno }) {
   );
 }
 
+// 반복 되는 조회 서식 에 제목과 내용을 받아 만들기
 const makeDiv = (title, value) => (
   <div className={"flex justify-center"}>
     <div className={"relative mb-4 flex w-full flex-wrap items-stretch"}>
