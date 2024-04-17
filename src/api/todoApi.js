@@ -21,3 +21,11 @@ export const getList = async (pageParam) => {
 
   return res.data;
 };
+
+// 투두 등록 기능
+export const postAdd = async (todoObj) => {
+  // JSON.stringify(obj) => JSON문자형 // 과거에는
+  const res = await axios.post(`${prefix}/`, todoObj);
+
+  return res.data;
+};
