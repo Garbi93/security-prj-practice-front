@@ -29,3 +29,17 @@ export const postAdd = async (todoObj) => {
 
   return res.data;
 };
+
+// 투두 한개 삭제
+export const deleteOne = async (tno) => {
+  const res = await axios.delete(`${prefix}/${tno}`);
+
+  return res.data;
+};
+
+// 투두 한개 수정 하기
+export const putOne = async (todo) => {
+  const res = await axios.put(`${prefix}/${todo.tno}`, todo);
+
+  return res.data;
+};
