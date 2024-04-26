@@ -1,4 +1,5 @@
 import BasicMenu from "../../components/menus/BasicMenu";
+import LoginComponent from "../../components/member/LoginComponent";
 
 const LoginPage = () => {
   return (
@@ -10,7 +11,7 @@ const LoginPage = () => {
           "flex flex-wrap w-full h-full justify-center items-center border-2"
         }
       >
-        <div className={"text-2xl"}>Login Page</div>
+        <LoginComponent />
       </div>
     </div>
   );

@@ -6,9 +6,6 @@ const BasicMenu = () => {
   // 리덕스 툴킷 사용
   const loginState = useSelector((state) => state.loginSlice);
 
-  console.log("loginState...: ");
-  console.log(loginState);
-
   return (
     <nav id="navbar" className=" flex bg-blue-300">
       <div className="w-4/5 bg-gray-500">
