@@ -1,13 +1,13 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { loginPost } from "../api/memberApi";
-import { getCoolie, removeCookie, setCookie } from "../util/cookieUtil";
+import { getCookie, removeCookie, setCookie } from "../util/cookieUtil";
 
 const initState = {
   email: "",
 };
 
 const loadMemberCookie = () => {
-  const memberInfo = getCoolie("member");
+  const memberInfo = getCookie("member");
 
   return memberInfo;
 };

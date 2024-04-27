@@ -10,7 +10,7 @@ export const setCookie = (name, value, days = 1) => {
   return cookies.set(name, value, { expires: expires, path: "/" });
 };
 
-export const getCoolie = (name) => {
+export const getCookie = (name) => {
   // ----- 쿠키 값 갖고 오기
   return cookies.get(name);
 };
